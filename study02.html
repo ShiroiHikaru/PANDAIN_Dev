@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>study01</title>
+</head>
+<body>
+  <h1 id="quote">코드는 세세하게 입력해 줘야 한다. > "너 id가 hello인 html요소 있지 그거 찾아서 안의 내용을 안녕으로 바꿔"</h1>
+  <h1 id="hello">안녕하세요</h1>
+  <h1 id="hi">JS 초보에요</h1>
+
+  <script>
+    document.getElementById('quote').style.fontSize = "18px";
+    document.getElementById('hello').innerHTML = '안녕';
+    // document -> 문서인데 여기선 html 웹문서겠죠
+    //마침표 -> ~의 
+    //getElementById('어쩌구') -> 아이디가 '어쩌구'인 html 요소 (일명 element) 를 찾으셈 
+    //innerHTML -> 딱봐도 그냥 내부 HTML이라는 뜻인듯 
+    //= -> 등호는 프로그래밍에서 오른쪽에 있는걸 왼쪽에 대입하라는 뜻입니다. 
+    //'바보' -> 바보라는 문자 (큰따옴표, 작은따옴표안에 담겨있으면 항상 문자입니다.)
+
+    document.getElementById('hi').innerHTML = 'JS 고수에요';
+    //.getElementById()는 셀렉터라고 부릅니다. html 요소를 찾기 위해 사용합니다.
+    //.innerHTML / .style / .color 이렇게 점찍는데 괄호없는건 메소드(또는 함수) 라고 부릅니다.
+
+    //<숙제>
+    document.getElementById('hello').style.fontSize = '16px';
+  </script>
+</body>
+</html>
