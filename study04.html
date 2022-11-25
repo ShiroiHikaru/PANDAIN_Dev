@@ -4,17 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>study02</title>
-  <link rel="stylesheet" href="study02.css">
+  <title>study04</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1 id="quote">코드는 세세하게 입력해 줘야 한다. > "너 id가 hello인 html요소 있지 그거 찾아서 안의 내용을 안녕으로 바꿔"</h1>
   <div id="alert-box" class="alert-box">알림창임</div>
-  <button onclick="document.getElementById('alert-box').style.display='block';">버튼</button>
-  <button onclick="document.getElementById('alert-box').style.display='none';">닫기</button>
+  <button onclick="open()">버튼</button>
+  <button onclick="close()">닫기</button>
+  
   <script>
     document.getElementById('quote').style.fontSize = '18px';
     
+
+    
+    function open(구멍){
+      document.getElementById('alert-box').style.display = 'block';
+    }
+
+    open('안녕');
+
+    function close(){
+      document.getElementById('alert-box').style.display = 'none';
+    }
   </script>
 </body>
 </html>

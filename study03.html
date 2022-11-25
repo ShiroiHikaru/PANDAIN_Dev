@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>study03</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="quote">코드는 세세하게 입력해 줘야 한다. > "너 id가 hello인 html요소 있지 그거 찾아서 안의 내용을 안녕으로 바꿔"</h1>
+  <div id="alert-box" class="alert-box">알림창임</div>
+  <button onclick="open()">버튼</button>
+  <button onclick="close()">닫기</button>
+  
+  <script>
+    document.getElementById('quote').style.fontSize = '18px';
+    
+
+    //function 자유롭게작명(){
+    // 축약하고 싶은 긴 코드
+    // }
+
+    //1. function 키워드 쓰고 소괄호, 중괄호 붙이면 됩니다.
+    //2. 그리고 소괄호 왼쪽에 작명하고
+    //3. 긴 코드를 중괄호 안에 담으면 코드 축약 끝입니다.
+    //그럼 이제 자유롭게작명() 이거 쓸 때 마다 그 자리에 긴 코드가 실행됩니다.
+    
+    function open(){
+      document.getElementById('alert-box').style.display = 'block';
+    }
+
+    function close(){
+      document.getElementById('alert-box').style.display = 'none';
+    }
+
+
+    //함수 이름을 영어로 작명할 때 
+    //- 영어소문자로 시작합니다.
+    //- open_alert() 이런거 안됩니다. openAlert() 이렇게 붙여서 쓰는게 자바스크립트 관습입니다. (일명 camelCase)
+    //- 한글작명도 상관 없긴 합니다.
+  </script>
+</body>
+</html>
